@@ -6,7 +6,7 @@ import string
 def generate_pw(length):
     characters= string.ascii_letters + string.digits + string.punctuation
     first_char = random.choice(string.ascii_letters)
-    rem_char = ''.join(random.sample(characters,length-1)) #for i in range(length-1))
+    rem_char = ''.join(random.sample(characters,length-1)) 
     pw = first_char + rem_char
     return pw
 
